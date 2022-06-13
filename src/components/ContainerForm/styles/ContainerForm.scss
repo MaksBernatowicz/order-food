@@ -1,0 +1,78 @@
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80vh;
+    background-color: var(--color-green-secondary);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+    .form__title {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+    }
+
+    .signature {
+        color: var(--color-green-tertriary);
+        font-size: 1rem;
+    }
+
+    .submit__order {
+        margin: 1rem auto;
+        padding: 0.8rem 1.6rem;
+        border-radius: 0.5rem;
+        background-color: var(--color-green-tertriary);
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .containerForm {
+        width: 60%;
+
+        .form__title {
+            font-size: 2rem;
+        }
+
+        .signature {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containerForm {
+        width: 90%;
+        height: 90vh;
+        padding: 1rem;
+
+        .form__title {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .signature {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .containerForm {
+
+        .form__title {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+
+        .signature {
+            font-size: 0.6rem;
+        }
+
+        .submit__order {
+            font-size: 1rem;
+        }
+    }
+}
